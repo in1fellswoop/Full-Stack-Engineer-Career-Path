@@ -1,0 +1,38 @@
+let humanScore = 0;
+let computerScore = 0;
+let currentRoundNumber = 1;
+
+// Write your code below:
+
+function generateTarget() { // Generating random num between 0-9
+  return Math.floor(Math.random() * 10);
+}
+
+function getAbsoluteDistance(target, guess) {
+  return Math.abs(target - guess); // Finding absolute dist to random num for each guess
+}
+
+function compareGuesses(hGuess, cGuess, secretNum) {
+  const hProx = getAbsoluteDistance(secretNum, hGuess); // Finding absolute dist to random num for human
+  const cProx = getAbsoluteDistance(secretNum, cGuess); // Finding absolute dist to random num for human
+
+  if(hProx <= cProx) { // Determining winner based on rules provided
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function updateScore(sOutcome) {
+  sOutcome === 'human' ? humanScore++ : computerScore++;
+}
+
+function advanceRound() {
+  currentRoundNumber++;
+}
+
+function alert(hGuess) {
+  if(hGuess < 0 | hGuess > 9) {
+    return'Your input is outside the appropriate range';
+  }
+}
