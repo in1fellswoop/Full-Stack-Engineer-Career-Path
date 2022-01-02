@@ -1,0 +1,123 @@
+const _ = {
+  // Numerical methods
+  clamp(n, lBound, uBound) {
+    if(n < lBound) { // Assign lower bound to 'n' if it's too low
+      return lBound;
+    } else if(n > uBound) { // Assign upper bound to 'n' if it's too high
+      return uBound;
+    } else {  // Return 'n' as is, if it's within bounds        
+      return n;
+    }
+  },
+  inRange(n, start, end) {
+    
+    if(end === undefined) { // If 'end' parameter is undefined do as so:
+      end = start;
+      start = 0;
+    }
+
+    if(start > end) { // Swap start and end values if inputted incorrectly
+      let inter = start;
+      start = end;
+      end = inter;
+    }
+
+    return (n < end && n >= start) ? true : false; // If number is within range, return true, if not, return false
+  },
+  // String methods
+  words(string) {
+    return string.split(' '); // Using built in functionality for splitting string
+  },
+  pad(string, length) {
+    if(string.length >= length) {
+      return string; // Returning original string if longer than length provided
+    }
+    const diff = length - string.length; // Assigning difference in length to variable
+
+    for(let i = 1; i <= diff; i++) {
+      if(i%2 !== 0) { // Every odd index will add a space on the right of the string
+        string += ' ';
+      } else {// Every even index will add a space on the right of the string
+        string = ' ' + string;
+      }
+    }
+    return string; // Returning padded string
+  },
+  // Object methods
+  has(obj, key) {
+    return obj[key] ? true : false; // Determining if key value pair is present
+  },
+  invert(obj) {
+    const invObj = {}; // New (soon to be) inverted object
+
+    for (const key in obj) {
+    invObj[obj[key]] = key; // Assigning and inverting each key value pair
+    }
+    return invObj; // Returning inverted objected
+  },
+  findKey(obj, boolFxn) {
+    for(const key in obj) { // Itering through each key in 'obj'
+      if(boolFxn(obj.key)) { 
+        return key; // If 'boolFxn' return true based on truthy-ness of object value, return key
+      }
+    }
+
+    return undefined; // Else, return undefined
+  },
+  // Array methods
+  drop(arr, dropNum) {
+    let newArr = []; // Creating new empty array
+    
+    if(dropNum === undefined) { // If drop number is undefined then copy all but the first element to new array
+      for(let i = 1; i < arr.length; i++) {
+        // New array must start at index zero --> i - 1 = 0 at beginning of loop
+        newArr[i - 1] = arr[i]; 
+      }
+    }
+
+    for(let i = dropNum; i < arr.length; i++) { // Use drop number value as the starting point of copying into new array
+      // New array must start at index zero --> i - dropNum = 0 at beginning of loop
+      newArr[i - dropNum] = arr[i]; 
+    }
+    return newArr;
+  },
+  dropWhile(arr, predicate) { 
+   let arrCopy = arr; // Copying parameter into new array
+
+   while(predicate(arrCopy[0], 0, arrCopy)) { // Continuously cuts array down until predicate returns false
+     arrCopy = _.drop(arrCopy); // Applies _.drop() method to copied array
+
+     if(arrCopy.length === 0) { // Safety net should there be no falsey state (not necessary for this problem)
+       break;
+     }
+   }
+    return arrCopy; // Return new array
+  },
+  chunk(arr, size = 1) {
+    let chunkArr = []; // Creating an empty array to store each chunk in
+    let finalArr = []; // Creating an empty array to store all chunked arrays
+
+    let chunkCounter = 0; // This counter will iterate from 0 to the specified 'size'
+    let finalArrCounter = 0; // This counter will iterate trhough each element of the finalArr
+
+    for(let i = 0; i < arr.length; i++) { // Iterates through original array
+      chunkArr[chunkCounter] = arr[i]; // Assigns each array value to the 0 through 'size' element of chunkArr
+      chunkCounter++; // Increases this counter to allow for new element to be filled in chunkArr
+
+      if(chunkCounter === size | i === arr.length - 1) { // Triggers at end of chunk or end of original array
+        finalArr[finalArrCounter] = chunkArr; // Storing chunkArr into new element of finalArr
+        chunkArr = []; // Resetting chunkArr
+        chunkCounter = 0; // Resetting chunkCounter
+        finalArrCounter++; // Increases this counter to allow for new element to be filled in finalArr
+      }
+    }
+    return finalArr;
+  }
+};
+
+
+
+
+
+// Do not write or modify code below this line.
+module.exports = _;
