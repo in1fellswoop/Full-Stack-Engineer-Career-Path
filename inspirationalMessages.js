@@ -9,7 +9,7 @@ You are capable
 */
 const subject = "You "; // All inspirational messages will begin with this wording
 
-const areArr = ["are special.", "are kind.", "are powerful.", "are capable.", "are loving.", "are special.", "are great.", "are the best version of yourself.", "a gift"];
+const areArr = ["are special.", "are kind.", "are powerful.", "are capable.", "are loving.", "are special.", "are great.", "are the best version of yourself.", "are a gift."];
 
 const canArr = ["can do it!", "can do anything!", "can do anything you set your mind to.", "can be anything you dream of."];
 
