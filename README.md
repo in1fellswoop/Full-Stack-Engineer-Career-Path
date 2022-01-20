@@ -41,3 +41,17 @@ The `_.chunk()` method was clunky. I feel like there could have been a more effi
 Click [here](https://github.com/in1fellswoop/Full-Stack-Engineer-Career-Path/commit/311a2c8850cec2605abd3ad1c36e3e24c59e6cf4) for the link to this project.  
 
 <!-- End of this project's section -->
+
+
+## HTML & CSS Projects
+
+### Excursion Project
+
+###### Description:
+Recreating a webpage for a hypothetical travel guide app.
+
+###### Current issues in development:
+None.
+
+###### Link:
+Click [here](https://github.com/in1fellswoop/Full-Stack-Engineer-Career-Path/tree/main/excursion) for the link to this project.
