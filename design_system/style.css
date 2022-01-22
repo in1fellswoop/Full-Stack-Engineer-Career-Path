@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 
+    This section pertains to 'main' element
+*/
+
+section {
+    border: 1px solid gray;
+    margin: 10px 30px;
+}
+
+h1, h3 {
+    padding: 10px 10px 10px 40px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* This is the beginning of the palette section */
+/* #region */
+.palette {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 30px;
+}
+
+.top, .bottom {
+    width: 96px;
+    height: 48px;
+    padding: 2px;
+}
+
+.darkmode, .deepsea, .opensky, .oldcafe, .tropicalleaf, .matcha {
+    border: 3px solid black;
+    border-radius: 25%;
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 5px 10px 5px;
+    background-color: rgb(221, 221, 221);
+}
+
+/* Defining the Dark Mode palette */
+/* #region */
+.darkmode .palette {
+    border: 2px solid #7a7a7a;
+    margin: 5px;
+}
+
+.darkmode .top {
+    background-color: #222121;
+}
+
+.darkmode .top p {
+    color: #919090;
+    text-align: center;
+    padding: 14px;
+}
+
+.darkmode .bottom {
+    background-color: #383737;
+}
+
+.darkmode .bottom p {
+    color: #a7a6a6;
+    text-align: center;
+    padding: 14px;
+}
+/* #endregion */
+
+/* Defining the Deap Sea palette */
+/* #region */
+.deepsea .palette {
+    border: 2px solid #2596be;
+    margin: 5px;
+}
+
+.deepsea .top {
+    background-color: #071e26;
+}
+
+.deepsea .top p {
+    color: #1a6985;
+    text-align: center;
+    padding: 14px;
+}
+
+.deepsea .bottom {
+    background-color: #0b2d39;
+}
+
+.deepsea .bottom p {
+    color: #1e7898;
+    text-align: center;
+    padding: 14px;
+}
+/* #endregion */
+
+/* Defining the Open Sky palette */
+/* #region */
+.opensky .palette {
+    border: 2px solid #ffffff;
+    margin: 5px;
+}
+
+.opensky .top {
+    background-color: #2596be;
+}
+
+.opensky .top p {
+    color: #bee0ec;
+    text-align: center;
+    padding: 14px;
+}
+
+.opensky .bottom {
+    background-color: #3ba1c5;
+}
+
+.opensky .bottom p {
+    color: #d3eaf2;
+    text-align: center;
+    padding: 14px;
+}
+/* #endregion */
+
+/* Defining the Old Cafe palette */
+/* #region */
+.oldcafe .palette {
+    border: 2px solid #000000;
+    margin: 5px;
+}
+
+.oldcafe .top {
+    background-color: #835127;
+}
+
+.oldcafe .top p {
+    color: #c1a893;
+    text-align: center;
+    padding: 14px;
+}
+
+.oldcafe .bottom {
+    background-color: #9c7452;
+}
+
+.oldcafe .bottom p {
+    color: #342010;
+    text-align: center;
+    padding: 14px;
+}
+/* #endregion */
+
+/* Defining the Tropical Leaf palette */
+/* #region */
+.tropicalleaf .palette {
+    border: 2px solid #849d91;
+    margin: 5px;
+}
+
+.tropicalleaf .top {
+    background-color: #020c07;
+}
+
+.tropicalleaf .top p {
+    color: #224f38;
+    text-align: center;
+    padding: 14px;
+}
+
+.tropicalleaf .bottom {
+    background-color: #03120a;
+}
+
+.tropicalleaf .bottom p {
+    color: #3a624e;
+    text-align: center;
+    padding: 14px;
+}
+/* #endregion */
+
+/* Defining the Matcha palette */
+/* #region */
+.matcha .palette {
+    border: 2px solid #C3A261;
+    margin: 5px;
+}
+
+.matcha .top {
+    background-color: #8cb145;
+}
+
+.matcha .top p {
+    color: #fff3b6;
+    text-align: center;
+    padding: 14px;
+}
+
+.matcha .bottom {
+    background-color: #98b958;
+}
+
+.matcha .bottom p {
+    color: #fff4bd;
+    text-align: center;
+    padding: 14px;
+}
+/* #endregion */
+/* #endregion */
+
+/* This is the beginning of the fonts section */
+
+/* 
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Cinzel', serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster Two', cursive;
+    
+    font-family: 'Rubik Beastly', cursive;
+    font-family: 'Signika', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Special Elite', cursive;
+*/
+
+/* Adjusting font styles */
+/* #region */
+.extralight {
+    font-weight: 200;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+/* #endregion */
+
+/* Assigning each font */
+/* #region */
+.amaticSC ul {
+    font-family: 'Amatic SC', cursive;
+}
+
+.cinzel ul {
+    font-family: 'Cinzel', serif;   
+}
+
+.dancing-script ul {
+    font-family: 'Dancing Script', cursive;  
+}
+
+.lobster-two ul {
+    font-family: 'Lobster Two', cursive;
+}
+
+.neonderthaw ul {
+    font-family: 'Neonderthaw', cursive;   
+}
+
+.rubik-beastly ul {
+    font-family: 'Rubik Beastly', cursive;   
+}
+
+.signika ul {
+    font-family: 'Signika', sans-serif;
+}
+
+.source-code-pro ul {
+    font-family: 'Source Code Pro', monospace;    
+}
+
+.special-elite ul {
+    font-family: 'Special Elite', cursive; 
+}
+/* #endregion */
+
+/* Organizing each font div */
+/* #region */
+.fonts div {
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    margin: 30px;
+    font-size: large;
+}
+
+.fonts h5 {
+    font-size: larger;
+    text-decoration: underline;
+    margin: 10px;
+}
+/* #endregion */
+
+/* This is the beginning of the footer element */
+
+footer {
+    font-family: 'Source Code Pro', monospace;
+    padding: 20px 20px 20px 40px;
+    text-align: right;
+}
