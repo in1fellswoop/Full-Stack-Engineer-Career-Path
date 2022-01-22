@@ -55,3 +55,16 @@ None.
 
 ###### Link:
 Click [here](https://github.com/in1fellswoop/Full-Stack-Engineer-Career-Path/tree/main/excursion) for the link to this project.
+
+<!-- End of this project's section -->
+
+### Design System Project
+
+###### Description:
+Creating a web page that is meant to act as a design system webpage. I have provided some color palettes with variation, along with different font family's from google fonts.
+
+###### Current issues in development:
+None.
+
+###### Link:
+Click [here](https://github.com/in1fellswoop/Full-Stack-Engineer-Career-Path/tree/main/design_system) for the link to this project.
