@@ -1,0 +1,178 @@
+/* Cross-Site Styling */
+/* #region */
+* {
+    margin: 0; 
+    padding: 0;
+    /* Resetting margin and padding */
+    font-family: Helvetica;
+    font-size: 22px;
+    color: hsla(24, 100%, 97%, 0.9);
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1rem;
+    padding: 2%;
+}
+
+h4 {
+    font-size: .75rem;
+    padding-bottom: 10px;
+}
+
+h5 {
+    font-size: .5rem;
+    padding: 10px 0;
+}
+/* #endregion */
+
+/* Header Element */
+/* #region */
+header {
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo {
+    height: auto;
+    width: 30%;
+    margin: 0 0 0 5px;
+    text-align: left;
+}
+
+#logo {
+    width: auto;
+    height: 50px;
+    padding: 0;
+}
+
+nav {
+    height: auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-size: .75rem;
+    text-decoration: underline;
+    display: inline-flex;
+}
+/* #endregion */
+
+/* Main Element */
+/* #region */
+main {
+    padding: 0 5% 0 5%;
+    position: relative;
+    top: 69px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Mission statement section */
+/* #region */
+#mission-statement {
+    width: 1200px;
+    height: 700px;
+    background-image: url("./pictures/mission.jpeg");
+    display: flex;
+    align-items: center;
+}
+
+#mission-statement div {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+/* #endregion */
+
+/* Tea of the month section */
+/* #region */
+#of-the-month {
+    width: 1000px;
+    height: auto;
+    margin: 20px 0;
+}
+
+div img {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+}
+
+#teas {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+/* #endregion */
+
+/* Locations section */
+/* #region */
+#locations {
+    width: 1200px;
+    height: 500px;
+    background-image: url('./pictures/locations.jpeg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#locations h2 {
+    padding: 0;
+    margin: 0;
+}
+
+#addresses {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#addresses div {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 15px;
+}
+/* #endregion */
+
+/* Aside Section */
+
+aside {
+    height: 200px;
+    width: 100%;
+}
+
+aside h2 {
+    margin: 20px 0;
+}
+/* #endregion */
+
+/* Footer Element */
+footer {
+    position: relative;
+    top: 70px;
+    text-align: left;
+    padding-bottom: 20px;
+}
