@@ -68,3 +68,17 @@ None.
 
 ###### Link:
 Click [here](https://github.com/in1fellswoop/Full-Stack-Engineer-Career-Path/tree/main/design_system) for the link to this project.
+
+<!-- End of this project's section -->
+
+### Tea Cozy Project
+
+###### Description:
+Creating a web page based off of [this](https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-redline.jpg) desgin spec. 
+
+###### Current issues in development:
+I attempted to make the webpage as responsive as possible, I am sure there are areas for improvement that I will find as I develop my skills more.
+
+###### Link:
+Click [here](https://github.com/in1fellswoop/Full-Stack-Engineer-Career-Path/tree/main/tea_cozy_webpage) for the link to this project.
+
