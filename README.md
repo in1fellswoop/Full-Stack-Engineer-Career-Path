@@ -82,3 +82,16 @@ I attempted to make the webpage as responsive as possible, I am sure there are a
 ###### Link:
 Click [here](https://github.com/in1fellswoop/Full-Stack-Engineer-Career-Path/tree/main/tea_cozy_webpage) for the link to this project.
 
+
+<!-- End of this project's section -->
+
+### Homepage Project
+
+###### Description:
+Creating a home page for Blender 3D. 
+
+###### Current issues in development:
+Currently working on project. May have some trouble creating a search bar and a rotating image carousel.
+
+###### Link:
+Click [here](https://github.com/in1fellswoop/Full-Stack-Engineer-Career-Path/tree/main/homepage) for the link to this project.
