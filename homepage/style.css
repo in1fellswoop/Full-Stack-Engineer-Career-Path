@@ -209,3 +209,17 @@ h3 {
         font-size: .75rem;
     }
   }
+
+
+  /* Footer Section */
+
+  footer {
+      background-color: #383737;
+      height: 50px;
+      border-radius: 5px;
+  }
+
+  footer p {
+      text-align: center;
+      padding: 10px;
+  }
