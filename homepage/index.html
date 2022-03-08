@@ -1,79 +1,102 @@
 <!DOCTYPE html>
-<!-- Wirefram of intended outcome can be found here: https://wireframe.cc/b8wOST -->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Blender Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
-        <title>Blender Homepage</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <div class="logo" alt="Homepage link">
-                <a href="./index.html"></a>
-            </div>
+            <a class="homepage-link" href="https://www.blender.org/" target="_blank"><h1>Blender</h1></a>
             <nav>
-                <a href="">Download</a>
-                <a href="">Download</a>
+                    <a href="https://blender.org/download" target="_blank">Download</a>
+                    <a href="https://www.blender.org/support/" target="_blank">Support</a>
+                    <a href="https://www.blender.org/about/" target="_blank">About</a>
             </nav>
-            <!-- Will add a searchbar -->
         </header>
         <main>
-            <section id="carousel">
-                <section id="image-wheel">
-                    <img id="current-image" src="./images/carousel/2021.jpeg" alt="Sprite Fright Blender Shortfilm">
-                    <img id="after-image" src="./images/carousel/2020.jpeg" alt="">
-                    <!-- <img id="previous-image" src="./images/carousel/2010.jpeg" alt=""> -->
-                </section>
-                <div id="carousel-buttons">
-                    <button class="start">&laquo;</button>
-                    <button class="back">&lsaquo;</button>
-                    <button class="forward">&rsaquo;</button>
-                    <button class="end">&raquo;</button>
+            <section class="mission">
+                <div class="statement">
+                    <h2>The Freedom to Create</h2>
+                    <p>Get the world’s best 3D CG technology in the hands of artists as free/open source software.</p>
+                </div>                
+            </section>
+            <section class="capabilities">
+                <div class="cycles-engine flex-container">
+                    <div class="text-container">
+                        <h3>Cycles Render Engine</h3>
+                        <p>
+                            Cycles is Blender’s built-in powerful unbiased path-tracer engine that offers stunning ultra-realistic rendering.
+                        </p>
+                        <br>
+                        <ul>
+                            <li>Real-time viewport preview</li>
+                            <li>CPU & GPU rendering</li>
+                            <li>PBR shaders & HDR lighting support</li>
+                            <li>VR rendering support</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.blender.org/features/rendering/" target="_blank"><img src="https://www.blender.org/wp-content/uploads/2019/07/blender_render-1280x720.jpg?x59066" alt=""></a>
+                </div>
+                <div class="tools flex-container">
+                    <a href="https://www.blender.org/features/" target="_blank"><img src="https://www.blender.org/wp-content/uploads/2019/07/modeling02-1280x720.jpg?x59066" alt=""></a>
+                    <div class="text-container">
+                        <h3>Modeling, Sculpt, UV</h3>
+                        <p>
+                            Blender’s comprehensive array of modeling tools make creating, transforming and editing your models a breeze.
+                        </p>
+                        <br>
+                        <ul>
+                            <li> Full N-Gon support</li>
+                            <li>Edge slide, inset, grid and bridge fill, and more</li>
+                            <li>Advanced sculpting tools and brushes</li>
+                            <li>Multi-resolution and Dynamic subdivision</li>
+                            <li>3D painting with textured brushes and masking</li>
+                            <li>Python scripting for custom tools and add-ons</li>
+                        </ul>
+                    </div>                    
+                </div>
+                <div class="vfx flex-container">
+                    <div class="text-container">
+                        <h3>VFX</h3>
+                        <p>
+                            VFX professionals say: “Probably the best tracker in the market”. Blender includes production ready camera and object tracking. Allowing you to import raw footage, track the footage, mask areas and see the camera movements live in your 3D scene. Eliminating the need to switch between programs.
+                        </p>
+                        <br>
+                        <ul>
+                            <li>Auto and Manual tracking</li>
+                            <li>Powerful camera reconstruction</li>
+                            <li>Real-time preview of your tracked footage and 3D scene</li>
+                            <li>Support for Planar tracking and Tripod solvers</li>
+                        </ul>
+                    </div>
+                    <a href="https://www.blender.org/features/vfx/" target="_blank"><img src="https://www.blender.org/wp-content/uploads/2019/07/blender_vfx-1280x720.jpg?x59066" alt=""></a>
+                </div>
+                <div class="animation flex-container">
+                    <a href="https://www.blender.org/features/animation/" target="_blank"><img src="https://www.blender.org/wp-content/uploads/2019/07/animation01-1280x720.jpg?x59066" alt=""></a>
+                    <div class="text-container">
+                        <h3>Animation & Rigging</h3>
+                        <p>
+                            Thanks to the high quality rigging and animation tools, Blender is being used for numerous short films, advertisements, TV series and feature films now.
+                        </p>
+                        <br>
+                        <ul>
+                            <li>Envelope, skeleton and automatic skinning</li>
+                            <li>B-spline interpolated bones</li>
+                            <li>Curve editor and dope sheets</li>
+                            <li>Custom bone shapes for fast input</li>
+                            <li>Sound synchronization</li>
+                        </ul>
+                    </div>                    
                 </div>
             </section>
-            <section id="grid">
-                <section class="title">
-                    <h1>Blender Features</h1>
-                </section>
-                <!-- Left Column -->
-                <div class="feature  L-one">
-
-                </div>
-                <div class="feature L-two">
-
-                </div>
-                <div class="feature L-three">
-
-                </div>
-                <!-- Middle column -->
-            
-                <div class="feature  M-one">
-
-                </div>
-                <div class="feature M-two">
-
-                </div>
-                <div class="feature M-three">
-
-                </div>
-                <!-- Right column -->
-                <div class="feature  R-one">
-
-                </div>
-                <div class="feature R-two">
-
-                </div>
-                <div class="feature R-three">
-
-                </div>
-            </section>
+            <section></section>
         </main>
         <footer>
-
+            <!-- insert email, phone number, address, blender inc, etc. -->
         </footer>
     </body>
 </html>
