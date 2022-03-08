@@ -1,209 +1,211 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    color: #919090;
+    margin: 0px;
+    padding: 0px;
 }
-
-/* 
-    Primary: #222121
-    Secondary: #383737
-    Text 1: #919090
-    Text 2: #a7a6a6
-    Hightlights: #7a7a7a
-*/
-
 body {
     background-color: #222121;
-    display: grid;
-    grid-template: minmax(40px, 80px) 90% minmax(40px, 80px) / 1fr 10fr 1fr;
-    grid-template-areas: 
-        "header header header"
-         ". main ."                     "footer footer footer";
-    height: 1300px;
+    color:  #a7a6a6;
+    width: 100vw;
 }
 
 header {
-    grid-area: header;
     background-color: #383737;
-    border-bottom: 1px solid #7a7a7a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
 }
 
-.logo {
-    width: 30%;
-    height: 100%;
-    background-image: url('./images/big-logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+h1{
+    font-weight: bold;
+    font-size: 4rem;
+    color: #EA7600;
+    text-align: center;
 }
 
-.logo a {
-    max-width: 100%;
-    max-height: 100%;
+h1:hover {
+    color: #fd8206;
+}
+
+.homepage-link {
+    text-decoration: none;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: #919090;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+a:hover {
+    color: #EA7600;
+}
+
+img {
+    max-width: 700px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
     align-self: center;
 }
 
-main {
-    background-color: beige;
-    grid-area: main;
-}
-
-#carousel {
-    background-color: darkblue;
-    height: 600px;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-}
-
-#image-wheel {
-    background-color: darkolivegreen;
-    width: 100%;
-    height: 90%;
-    padding: 1%;
-    display: grid;
-    grid-template: 5% repeat(12, 1fr) 5% / repeat(10, 1fr);
-}
-
-
-
-#current-image {
-    grid-area: 2 / 4 / 11 / 8;
-    max-width: 100%;
-    border-radius: 10%;
-}
-
-#previous-image {
-    grid-area: 3 / 3 / 13 / 6;
-    height: 100%;
-    border-radius: 10%;
-}
-
-#after-image {
-    grid-area: 3 / 3 / 13 / 6;
-    height: 100%;
-    border-radius: 10%;
-}
-
-#carousel-buttons {
-    margin: 1%;
-    background-color: rgb(247, 144, 112);
-    min-width: 125px;
-    max-width: 150px;
-    text-align: center;
-}
-
-#carousel button {
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    margin: 1%;
-    background-color: hsla(0, 0%, 48%, .2);
-    border: 1px solid hsla(0, 0%, 48%, .8);
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-#carousel button:hover {
-    background-color: hsla(0, 0%, 48%, .5);
-    border: 1px solid hsla(0, 0%, 48%, 1);
-}
-
-/* Grid Section: Features */
-
-#grid {
-    display: grid;
-    width: 100%;
-    height: 50%;
-    padding: 2%;
-    grid-template: repeat(4, 1fr) / 1fr repeat(3, 3fr) 1fr;
-    grid-template-areas:
-        ". title title title ."
-        ". L-feature1 M-feature1 R-feature1 ."
-        ". L-feature2 M-feature2 R-feature2 ."
-        ". L-feature3 M-feature3 R-feature3 .";
-    gap: 1rem;
-}
-
-#grid .title {
-    grid-area: title;
-    text-align: center;
-}
-
-.title h1 {
-    font-size: 2em;
-}
-
-/* Left column */
-
-.L-one {
-    grid-area: L-feature1;
-}
-
-.L-two{
-    grid-area: L-feature2;
-}
-
-.L-three {
-    grid-area: L-feature3;
-}
-
-/* Middle column */
-
-.M-one {
-    grid-area: M-feature1;
-}
-
-.M-two {
-    grid-area: M-feature2;
-}
-
-.M-three {
-    grid-area: M-feature3;
-}
-
-/* Middle column */
-
-.R-one {
-    grid-area: R-feature1;
-}
-
-.R-two {
-    grid-area: R-feature2;
-}
-
-.R-three {
-    grid-area: R-feature3;
-}
-
-.feature {
-    background-color: #383737;
-    border-radius: 10px;
-    max-width: 200px;
-    height: 100px;
-}
-
-
-img {
-    /* background shadow*/
-    border-radius: 10px;
-}
-
 img:hover {
+    cursor: pointer;
+    opacity: .7;
     position: relative;
-    bottom: .125rem;
-    right: .125rem;
+    left: 2%;
 }
 
-footer {
-    background-color: #383737;
-    grid-area: footer;
-    border-radius: 5px;
+@media (max-width: 1200px) {
+    img {
+       width:  500px;
+    }
 }
+
+@media (max-width: 800px) {
+    img {
+        width:  300px;
+     }
+}
+
+/* Main */
+
+/* Mission Statement */
+
+.mission {
+    background-image: url('BlenderLogo500x2000.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.statement {
+    background-color: hsla(0, 1%, 22%, .7);
+    width: 100%;
+    padding: 2%;
+}
+
+.statement h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 1%;
+}
+
+.statement p{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1%;
+}
+
+@media (max-width: 1500px) {
+    .mission {
+        height: 300px;
+    }
+    .statement h2 {
+        font-size: 2rem;
+    }
+
+    .statement p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .mission {
+        background-image: url('BlenderLogo250x1000.png');
+        background-size: contain;
+        height: 250px;
+    }
+
+    .statement h2 {
+        font-size: 2rem;
+    }
+
+    .statement p {
+        font-size: 1rem;
+    }
+}
+
+/* Capabilities Section */
+
+.capabilities {
+    justify-content: center;
+    padding: 2%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    padding: 5%;    
+    max-width: 400px;
+}
+
+.capabilities a {    
+    margin: 0 5%;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 2em;
+    color: #EA7600;
+}
+
+@media (min-width: 2000px) {
+    .text-container {
+        padding: 0;
+        width: 700px;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    .capabilities p {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    .text-container {
+        padding: 1%;
+        width: 500px;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    .capabilities p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .capabilities p {
+        font-size: 1rem;
+    }
+
+    .capabilities li {
+        font-size: .75rem;
+    }
+  }
