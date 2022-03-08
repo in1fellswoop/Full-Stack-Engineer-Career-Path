@@ -91,7 +91,7 @@ Click [here](https://github.com/in1fellswoop/Full-Stack-Engineer-Career-Path/tre
 Creating a home page for Blender 3D. 
 
 ###### Current issues in development:
-Currently working on project. May have some trouble creating a search bar and a rotating image carousel.
+The responsive layout using only flexbox was difficult at times.
 
 ###### Link:
 Click [here](https://github.com/in1fellswoop/Full-Stack-Engineer-Career-Path/tree/main/homepage) for the link to this project.
